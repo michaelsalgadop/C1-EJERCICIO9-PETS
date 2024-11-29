@@ -1,0 +1,74 @@
+.cabecera {
+  box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.15);
+}
+.cabecera .contenedor-imagen {
+  flex: 0 80px;
+}
+.cabecera .contenedor-navegador .navegador {
+  display: none;
+}
+.navegador .lista-navegador .item-lista,
+.navegador .lista-navegador .boton-comprar {
+  font-size: 17px;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
+  color: var(--color-secundario);
+}
+.navegador .lista-navegador .item-lista {
+  border-bottom: 3px solid transparent;
+}
+.navegador .lista-navegador > .item-lista + .item-lista {
+  margin-left: 20px;
+}
+.navegador .lista-navegador .boton-comprar {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.navegador .lista-navegador > .item-lista.desplegable {
+  position: relative;
+}
+
+.navegador .item-lista.desplegable > .desplegado {
+  position: absolute;
+  top: 50px;
+  left: -30px;
+  min-width: 245px;
+  z-index: 1;
+  padding: 20px;
+  background-color: var(--color-terciario);
+  display: none;
+  color: var(--color-secundario);
+}
+.navegador .item-lista.desplegable > .desplegado li {
+  border-bottom: 1px solid #d3d3d3;
+}
+.navegador .item-lista.desplegable > .desplegado li + li {
+  margin-top: 10px;
+}
+.navegador .lista-navegador .desplegable::after {
+  content: "";
+  margin: 0 5px;
+  display: inline-block;
+  border: 5px solid transparent;
+  border-top: 6px solid var(--color-secundario);
+  border-bottom: 0 none;
+}
+.navegador .lista-navegador .item-lista:hover,
+.navegador .lista-navegador .item-lista.desplegable > .desplegado > li:hover {
+  color: var(--color-principal);
+}
+.navegador .lista-navegador .boton-comprar:hover {
+  color: var(--color-terciario);
+  background-color: var(--color-principal);
+}
+.navegador .lista-navegador .item-lista:hover {
+  border-bottom: 3px solid var(--color-principal);
+}
+.navegador .lista-navegador .item-lista.desplegable:hover::after {
+  border-top: 6px solid var(--color-principal);
+}
+.navegador .lista-navegador .item-lista.desplegable:hover > .desplegado {
+  display: block;
+}

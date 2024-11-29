@@ -1,0 +1,13 @@
+.titulo-pagina,
+.texto-subtitulo,
+.contenedor-boton-ver-todo {
+  text-align: center;
+}
+.titulo-pagina {
+  font-size: 14px;
+  color: var(--color-principal);
+}
+.texto-subtitulo {
+  font-size: 40px;
+  font-weight: bold;
+}

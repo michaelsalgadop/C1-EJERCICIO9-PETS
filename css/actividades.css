@@ -1,0 +1,27 @@
+.actividades .actividad {
+  position: relative;
+  cursor: pointer;
+}
+.actividades .imagen-actividad {
+  border-radius: 20px;
+  filter: brightness(0.7);
+  transition: 0.5s;
+}
+.actividades .titulo-actividades {
+  width: calc(100% - 30px);
+  position: absolute;
+  bottom: 15px;
+  text-align: center;
+}
+
+.actividades .titulo-actividades .titulo-actividad,
+.actividades .titulo-actividades .subtitulo-actividad {
+  color: var(--color-terciario);
+}
+.actividades .titulo-actividades .titulo-actividad {
+  font-size: 14px;
+}
+
+.actividades .titulo-actividades .subtitulo-actividad {
+  font-size: 18px;
+}

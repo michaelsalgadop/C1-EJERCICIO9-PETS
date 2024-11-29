@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+/*ROOT*/
+:root {
+  --color-principal: #ed6436;
+  --color-secundario: #181818;
+  --color-terciario: #fff;
+  --fuente-web: "Nunito", sans-serif;
+}
+/*RESETEADORES*/
+body,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: var(--fuente-web);
+  color: var(--color-secundario);
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3 {
+  font-weight: 900;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+.contenido-web {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}

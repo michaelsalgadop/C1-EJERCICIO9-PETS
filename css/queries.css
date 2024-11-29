@@ -1,0 +1,52 @@
+@media (min-width: 1024px) {
+  .contenedor-pagina {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  .contenido-web {
+    padding-top: 138px;
+  }
+  .contenedor-navegador .btn.btn-hamburguesa {
+    display: none !important;
+  }
+  .cabecera .contenedor-navegador .navegador {
+    display: block;
+  }
+  .titulo-pagina,
+  .texto-subtitulo {
+    text-align: left;
+  }
+  .contenedor-boton-ver-todo {
+    text-align: right;
+  }
+  .titulo-pagina {
+    font-size: 21px;
+  }
+  .texto-subtitulo {
+    font-size: 62px;
+  }
+  .actividades .imagen-actividad {
+    filter: brightness(1);
+  }
+  .boton-ver-todo,
+  .actividades .titulo-actividades .titulo-actividad {
+    font-size: 17px;
+  }
+  .actividades .titulo-actividades .subtitulo-actividad {
+    font-size: 27px;
+  }
+  .actividades .titulo-actividades {
+    bottom: 50%;
+    transform: translate(0%, 50%);
+  }
+  .actividades .titulo-actividades {
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+  .actividad:hover .imagen-actividad {
+    filter: brightness(0.7);
+  }
+  .actividad:hover .titulo-actividades {
+    opacity: 1;
+  }
+}
